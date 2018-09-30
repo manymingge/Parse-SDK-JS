@@ -60,6 +60,7 @@
   },
   "scripts": {
     "build": "./build_releases.sh",
+    "prepare": "npm run build",
     "release": "./build_releases.sh && npm publish",
     "test": "PARSE_BUILD=node jest",
     "docs": "jsdoc -c ./jsdoc-conf.json ./src",

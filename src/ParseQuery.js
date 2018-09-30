@@ -587,7 +587,7 @@ class ParseQuery {
 
     return controller.aggregate(
       this.className,
-      stages,
+      pipeline,
       aggregateOptions
     ).then((results) => {
       return results.results;
